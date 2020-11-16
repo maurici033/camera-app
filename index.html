@@ -1,0 +1,55 @@
+<html lang=”en”>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Name of the app -->
+		<title>Camera App</title>
+
+		<!-- Link to main style sheet -->
+		<link rel="stylesheet" href="style.css"> 
+	</head>
+	<body>
+
+		<!-- Camera -->
+		<main id="camera">
+
+		    <!-- Camera sensor -->
+		    <canvas id="camera--sensor" style="height:500px; width:500px;" style="display:none;"></canvas>
+
+		    <div style="display: block;">
+		    	<div>
+					<input type="button" onclick="uploadEx()" value="Upload" />
+				</div>
+
+				<form method="post" accept-charset="utf-8" name="form1">
+					<input type="text" name="codart">
+					<input name="hidden_data" id='hidden_data' type="hidden"/>
+				</form>
+
+			    <div>
+			    
+			    <!-- Camera view -->
+			    <video id="camera--view" style="height:500px; width:500px;" autoplay playsinline></video>
+
+				</div>
+
+				<div>
+		    
+			    <!-- Camera output -->
+			    <img src="//:0" alt="" style="height:500px; width:500px;" id="camera--output">
+
+				</div>
+
+			</div>
+
+		    <!-- Camera trigger -->
+		    <button id="camera--trigger">Take a picture</button>
+
+		</main>
+
+		<!-- Reference to your JavaScript file -->
+		<script src="app.js"></script> 
+	</body>
+</html>
